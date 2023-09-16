@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@700&family=IBM+Plex+Sans:wght@700&family=Montserrat:wght@100&family=Open+Sans:wght@700&family=Roboto&family=Ubuntu:wght@300&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+$bg: rgb(38,
+34,
+34);
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.Header {
+    background-color: $bg;
+    height: 50px;
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+    >img {
+        height: 40px;
+    }
+    >div {
+        width: 100%;
+        margin-left: 2vmax;
+        >a {
+            padding: 1.3vmax;
+            font-weight: 10;
+            font-size: 1rem;
+            &:hover {
+                color: rgb(25, 181, 212);
+            }
+        }
+    }
+    >svg {
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+        &:hover {
+            color: rgb(25, 181, 212);
+        }
+    }
+}
